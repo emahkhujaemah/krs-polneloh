@@ -1,6 +1,7 @@
 package model;
 
-// import model.Dosen;
+import model.*;
+import java.util.*;
 
 public class Matakuliah {
     private String namaMatakuliah;
@@ -31,7 +32,7 @@ public class Matakuliah {
     }
 
     public void setSemester(int semester){
-
+        this.semester = semester;
     }
 
     public int getSemester(){
@@ -39,15 +40,23 @@ public class Matakuliah {
     }
 
     public void setPengampu(Dosen Pengampu){
-        // this.pengampu = pengampu;
+        // this.setPengampu = pengampu;
     }
 
     public Dosen getPengampu(){
         return pengampu;
     }
 
-    public void showMatakuliah(){
-        System.out.println("Mahasiswa");
+    public String showMatakuliah(){
+        
+      return "Nama Matakuliah "+namaMatakuliah + "\nSKS :" + sks + semester;
+    }
+
+    public static void printArray(List<Matakuliah> mList){
+        System.out.println("");
+        for(Matakuliah mt : mList){        
+            System.out.println(mt.showMatakuliah());
+        }
     }
 
 
