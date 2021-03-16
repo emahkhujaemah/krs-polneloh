@@ -10,13 +10,18 @@ public class Main {
         System.out.println(mhs.getNama());
         
 
-        Dosen dsn = new Dosen("1234567","Harold");
-        System.out.println(dsn.getNidn()); 
-        System.out.println(dsn.getNama());
+        Dosen dsn1 = new Dosen("1234567","Harold");
+        System.out.println(dsn1.getNidn()); 
+        System.out.println(dsn1.getNama());
 
-        Matakuliah matkul1 = new Matakuliah("Pemrograman PLOO", 4);
+        Matakuliah matkul1 = new Matakuliah("PPLOO", 4);
+        matkul1.setSemester(4);
+        matkul1.setPengampu(dsn1);
+
         Matakuliah matkul2 = new Matakuliah("Pemrograman Web 2", 3);
-        Matakuliah matkul3 = new Matakuliah("Pengujian & Penjaminan Kualitas PL", 4);
+        
+        
+        Matakuliah matkul3 = new Matakuliah("PPKPL", 4);
         Matakuliah matkul4 = new Matakuliah("Jaringan Komputer", 3);
         Matakuliah matkul5 = new Matakuliah("Metode Numerik", 3);
 
@@ -27,7 +32,7 @@ public class Main {
         mList.add(matkul4);
         mList.add(matkul5);
 
-        Matakuliah.printArray(mList);
+        KRS.showMatakuliah(mList);
 
     }
 

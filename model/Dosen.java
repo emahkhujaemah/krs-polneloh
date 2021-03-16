@@ -1,17 +1,17 @@
 package model;
 
-// import java.util.ArrayList;
+ import java.util.*;
 
-// import model.Matakuliah;
+ import model.Matakuliah;
 
 public class Dosen extends Person{
     private String nidn;
-    // private ArrayList<Matakuliah> listMatakuliahPengampu;
-    // private Matakuliah matakuliahPengampu;
+    private List<Matakuliah> listMatakuliahPengampu;
+    private Matakuliah matakuliahPengampu;
 
     public Dosen(String nidn, String nama){
         this.nidn = nidn;
-        this.nama = nama;
+        this.setNama(nama);
     }
 
     @Override
@@ -21,6 +21,7 @@ public class Dosen extends Person{
 
     public void lihatListMatakuliahPengampu(){
         System.out.println("Lihat List Matakuliah Pengampu");
+        
     }
 
     public void tambahMatakuliahPengampu(Matakuliah matakuliah){

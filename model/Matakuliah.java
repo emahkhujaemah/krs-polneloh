@@ -39,17 +39,16 @@ public class Matakuliah {
         return semester;
     }
 
-    public void setPengampu(Dosen Pengampu){
-        // this.setPengampu = pengampu;
+    public void setPengampu(Dosen pengampu){
+        this.pengampu = pengampu;
     }
 
     public Dosen getPengampu(){
         return pengampu;
     }
 
-    public String showMatakuliah(){
-        
-      return "Nama Matakuliah "+namaMatakuliah + "\nSKS :" + sks + semester;
+    public String showMatakuliah(){ 
+      return "Nama Matakuliah "+namaMatakuliah + ", SKS : " + sks ;
     }
 
     public static void printArray(List<Matakuliah> mList){

@@ -1,11 +1,11 @@
 package model;
-// package model.Matakuliah;
-// import java.util.ArrayList;
+package model.*;
+import java.util.*;
 
 
 public class KRS {
     private String noKRS;
-    // private ArrayList<Matakuliah> paketMatakuliah;
+    private List<Matakuliah> listMatakuliahPengampu;
 
     public KRS(String noKRS){
         this.noKRS = noKRS;
@@ -15,9 +15,13 @@ public class KRS {
 
     }
 
-    public void showMatakuliah(){
-    //    paketMatakuliah.toString();
+    public static void showMatakuliah(List<Matakuliah> mList){
+        System.out.println("");
+        for(Matakuliah mt : mList){        
+            System.out.println(mt.showMatakuliah());
+        }
     }
+    
 
     public void setNOKRS(String noKRS){
         this.noKRS = noKRS;
