@@ -32,7 +32,7 @@ public class Main {
         mList.add(matkul4);
         mList.add(matkul5);
 
-        KRS.showMatakuliah(mList);
+        Matakuliah.printArray(mList);
 
     }
 

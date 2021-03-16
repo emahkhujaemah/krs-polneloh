@@ -5,7 +5,7 @@ import java.util.*;
 
 public class KRS {
     private String noKRS;
-    private List<Matakuliah> listMatakuliahPengampu;
+    private List<Matakuliah> paketMatakuliah;
 
     public KRS(String noKRS){
         this.noKRS = noKRS;
