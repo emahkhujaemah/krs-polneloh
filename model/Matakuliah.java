@@ -9,9 +9,11 @@ public class Matakuliah {
     private int semester;
     private Dosen pengampu;
 
+
     public Matakuliah(String namaMatakuliah, int sks){
         this.namaMatakuliah = namaMatakuliah;
         this.sks = sks;
+        this.semester = 4;   
     }
 
     public void setNamaMatakuliah(String namaMatakuliah){
@@ -48,16 +50,18 @@ public class Matakuliah {
     }
 
     public String showMatakuliah(){ 
-      return "Nama Matakuliah "+namaMatakuliah + ", SKS : " + sks ;
+      return "Nama Matakuliah "+namaMatakuliah + ", SKS : " + sks;
+
     }
 
+    // public Dosen showDosen(Matakuliah matakuliahPengampu){ 
+    //     return pengampu;
+    //   }
+
     public static void printArray(List<Matakuliah> mList){
-        System.out.println("");
+        System.out.println("Semester 4 :");
         for(Matakuliah mt : mList){        
             System.out.println(mt.showMatakuliah());
         }
     }
-
-
-
 }

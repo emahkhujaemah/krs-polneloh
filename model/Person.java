@@ -4,7 +4,7 @@ public abstract class Person {
     
     protected String nama;
 
-    public abstract void  showProfil();
+    public abstract void showProfil();
     
     public void setNama(String nama){
         this.nama = nama;
