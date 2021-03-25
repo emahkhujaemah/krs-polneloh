@@ -43,6 +43,7 @@ public class Matakuliah {
 
     public void setPengampu(Dosen pengampu){
         this.pengampu = pengampu;
+        this.pengampu.showProfil();
     }
 
     public Dosen getPengampu(){
@@ -50,16 +51,11 @@ public class Matakuliah {
     }
 
     public String showMatakuliah(){ 
-      return "Nama Matakuliah "+namaMatakuliah + ", SKS : " + sks;
-
+        return "Nama Matakuliah "+namaMatakuliah + ", SKS : " + sks; 
     }
 
-    // public Dosen showDosen(Matakuliah matakuliahPengampu){ 
-    //     return pengampu;
-    //   }
-
     public static void printArray(List<Matakuliah> mList){
-        System.out.println("Semester 4 :");
+        System.out.println("\nSemester 4 :");
         for(Matakuliah mt : mList){        
             System.out.println(mt.showMatakuliah());
         }

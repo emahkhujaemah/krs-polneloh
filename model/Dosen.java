@@ -17,24 +17,21 @@ public class Dosen extends Person{
 
     @Override
     public void showProfil(){
-        tambahMatakuliahPengampu(listMatakuliahPengampu);
-
+        lihatListMatakuliahPengampu();
+        
     }
 
     public void lihatListMatakuliahPengampu(){ 
-        matakuliahPengampu.getPengampu();
-        // System.out.println("Lihat Matakuliah");
-        // for(Matakuliah mt : listMatakuliahPengampu){        
-        //     System.out.println(mt.Dosen();
-        // }       
+        System.out.println("\n==============================");       
+        System.out.println("Nama Dosen : "+nama);
+        System.out.println("NIDN       : "+nidn);
+              
     }
 
     public void tambahMatakuliahPengampu(List<Matakuliah> listMatakuliahPengampu){
-        System.out.println("\n================================");
         System.out.println("Tambah Matakuliah Pengampu");
-        System.out.println("Nama Dosen : "+nama);
-        System.out.println("NIDN       : "+nidn); 
-        
+        this.listMatakuliahPengampu =  listMatakuliahPengampu;
+
     }
     
     public void setNidn(String nidn) {

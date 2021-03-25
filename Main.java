@@ -12,6 +12,17 @@ public class Main {
         Matakuliah matkul4 = new Matakuliah("Jaringan Komputer", 3);
         Matakuliah matkul5 = new Matakuliah("Metode Numerik", 3);
 
+        Dosen dsn1 = new Dosen("1234567","Harold");
+        Dosen dsn2 = new Dosen("1784938", "Hinami");
+        Dosen dsn3 = new Dosen("1723556", "Tomozaki");
+        Dosen dsn4 = new Dosen("2356982", "Alllen");
+        Dosen dsn5 = new Dosen("2355383", "Gareki");
+
+        matkul1.setPengampu(dsn1);
+        matkul2.setPengampu(dsn2);
+        matkul3.setPengampu(dsn3);
+        matkul3.setPengampu(dsn4);
+        matkul3.setPengampu(dsn5);
 
         List<Matakuliah> mList = new ArrayList<Matakuliah>();
         mList.add(matkul1);
@@ -22,13 +33,7 @@ public class Main {
 
         Matakuliah.printArray(mList);
 
-        Dosen dsn1 = new Dosen("1234567","Harold");
-        Dosen dsn2 = new Dosen("1784938", "Hinami");
-
-        matkul1.setPengampu(dsn1);
-
-        dsn1.showProfil();
-        dsn2.showProfil();
+        
 
     }
 
